@@ -167,6 +167,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .main-section-projects h1{
   font-family: 'Oswald', sans-serif;
