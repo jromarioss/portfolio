@@ -266,6 +266,21 @@ body {
   color: #4a4b4d;
   transition: 0.5s;
 }
+.section-contact p {
+  margin-top: 30px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.18em;
+}
+.section-contact p a {
+  transition: .5s;
+} 
+.section-contact p a:hover {
+  font-size: 1.2em;
+  color: rgba(255, 0, 0, 0.568);
+  text-decoration: none;
+} 
 /* FOOTER */
 #footer {
   color: white;
