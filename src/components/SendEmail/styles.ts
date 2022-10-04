@@ -13,6 +13,10 @@ export const SendEmailContainer = styled.div`
     text-align: center;
     font-size: 2.5rem;
   }
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 `;
 
 export const SendEmailContent = styled.div`
@@ -21,6 +25,10 @@ export const SendEmailContent = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const SendEmailForm = styled.form`
@@ -29,6 +37,10 @@ export const SendEmailForm = styled.form`
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+
+  @media (max-width: 426px) {
+    width: 100%;
+  }
 
   input, label {
     display: block;
@@ -59,6 +71,10 @@ export const SendEmailForm = styled.form`
     border: 1px solid transparent;
     border-radius: 8px;
     font-size: 1rem;
+    
+    @media (max-width: 426px) {
+      width: 100%;
+    }
   }
 
   textarea:hover {

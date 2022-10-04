@@ -1,4 +1,3 @@
-
 import { HeaderContainer, HeaderContent, HeaderMenu } from "./styles";
 
 export function Header() {

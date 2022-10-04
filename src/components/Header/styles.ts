@@ -17,6 +17,14 @@ export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media (max-width: 426px) {
+    display: none;
+  }
 `;
 
 export const HeaderMenu = styled.nav`
@@ -38,5 +46,11 @@ export const HeaderMenu = styled.nav`
   li a.active {
     border-bottom: 2px solid ${props => props.theme["orange-100"]};
     color: ${props => props.theme["orange-100"]};
+  }
+
+  @media (max-width: 768px) {
+    li a {
+    margin-right: 1rem;
+  }
   }
 `;

@@ -14,6 +14,20 @@ export function CardsProjects() {
       perView: 3,
       spacing: 20,
     },
+    breakpoints: {
+      '(max-width: 768px)': {
+        slides: {
+          perView: 2,
+          spacing: 20,
+        }
+      },
+      '(max-width: 426px)': {
+        slides: {
+          perView: 1.4,
+          spacing: 20,
+        }
+      }
+    },
   });
 
   return (

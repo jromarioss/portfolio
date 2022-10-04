@@ -4,6 +4,11 @@ export const HomeContainer = styled.main`
   width: 70rem;
   margin: auto;
   margin-top: 5rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-inline: 1rem;
+  }
 `;
 
 export const HomeSectionHeader = styled.section`
@@ -17,6 +22,21 @@ export const HomeSectionHeader = styled.section`
   img {
     width: 16rem;
     border-radius: 8px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    img {
+      width: 13rem;
+    }
+  }
+
+  @media (max-width: 426px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
   }
 `;
 
@@ -46,16 +66,21 @@ export const SectionHeaderDiv = styled.article`
     font-size: 1rem;
     text-align: center;
   }
-`;
 
-export const SectionHeaderIcon = styled.div`
-  img {
-    width: 2.5rem;
+  @media (max-width: 768px) {
+    font-size: 1rem;
 
-    &:hover {
-      background-color: ${props => props.theme["orange-500"]};
-      transition: background-color 0.3s;
+    h1 {
+      font-size: 2.5rem;
     }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 426px) {
+    text-align: center;
   }
 `;
 
@@ -66,6 +91,23 @@ export const SectionAboutMe = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    height: auto;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+
+    h2  {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 426px) {
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const SectionAboutMeText = styled.section`
@@ -84,5 +126,11 @@ export const SectionAboutMeText = styled.section`
 
   p span {
     color: ${props => props.theme["orange-400"]}
+  }
+
+  @media (max-width: 426px) {
+    width: 100%;
+    height: auto;
+    margin: auto;
   }
 `;

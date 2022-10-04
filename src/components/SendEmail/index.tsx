@@ -1,7 +1,7 @@
-import { FormEvent, useRef } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { SendEmailContainer, SendEmailContent, SendEmailForm } from './styles';
-import { MyContacts } from './componets/MyContacts';
+import { MyContacts } from './components/MyContacts';
 
 export function SendEmail() {
   const form = useRef(null);

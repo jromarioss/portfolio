@@ -20,6 +20,7 @@ export const SectionSkillsCard = styled.div`
 `;
 
 export const SectionSkillsCards = styled.div`
+  width: 15rem;
   padding: 1rem;
   text-align: center;
   display: flex;
@@ -36,5 +37,11 @@ export const SectionSkillsCards = styled.div`
 
   &:hover {
     background-color: ${props => props.theme["gray-800"]};
+  }
+
+  @media (max-width: 768px) {
+    .cadrsWidth {
+      width: 15rem;
+    }
   }
 `;
