@@ -33,7 +33,7 @@ export function MyContacts() {
       </MyContactsCard>
 
       <Pdf>
-        <a href="./public/Jose.pdf" download="Jose.pdf" type="application/pdf">Download Currículo</a>
+        <a href="/Jose.pdf" download="Jose.pdf" type="application/pdf">Download Currículo</a>
         <img src={pdfImg} alt="" width="30" />
       </Pdf>
     </MyContactsContainer>
