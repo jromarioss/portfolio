@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SendEmailContainer = styled.div`
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,6 +16,13 @@ export const SendEmailContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
+    padding: 1rem;
+  }
+
+  @media (max-width: 426px) {
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
 

@@ -12,7 +12,7 @@ export function CardsSkills() {
     breakpoints: {
       '(max-width: 768px)': {
         slides: {
-          perView: 3,
+          perView: 2.5,
           spacing: 20,
         }
       },

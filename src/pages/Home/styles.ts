@@ -3,18 +3,20 @@ import styled from "styled-components";
 export const HomeContainer = styled.main`
   width: 70rem;
   margin: auto;
-  margin-top: 5rem;
 
   @media (max-width: 768px) {
     width: 100%;
+    padding-inline: 2rem;
+  }
+
+  @media (max-width: 426px) {
     padding-inline: 1rem;
   }
 `;
 
 export const HomeSectionHeader = styled.section`
   width: 100%;
-  height: calc(100vh - 5rem);
-  margin: 0 auto;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,8 +27,6 @@ export const HomeSectionHeader = styled.section`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
-
     img {
       width: 13rem;
     }
@@ -86,8 +86,7 @@ export const SectionHeaderDiv = styled.article`
 
 export const SectionAboutMe = styled.section`
   width: 100%;
-  height: calc(100vh - 5rem);
-  margin-top: 1rem;
+  height: calc(100vh);
   display: flex;
   align-items: center;
   justify-content: space-between;

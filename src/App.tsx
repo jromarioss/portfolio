@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
 import { defaulTheme } from "./styles/theme/default";
@@ -11,7 +10,6 @@ export function App() {
     <ThemeProvider theme={defaulTheme}>
       <Header />
       <Home />
-      <Footer />
       <GlobalStyle />
     </ThemeProvider>
   );

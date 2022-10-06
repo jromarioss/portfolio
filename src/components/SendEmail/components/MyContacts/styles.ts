@@ -6,6 +6,10 @@ export const MyContactsContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   gap: 5rem;
+
+  @media (max-width: 426px) {
+    gap: 2rem;
+  }
 `;
 
 export const MyContactsCard = styled.div`
@@ -20,11 +24,12 @@ export const MyContactsCard = styled.div`
 
 
 export const MyContactsCards = styled.div`
-  width: 13rem;
+  width: 11rem;
   padding: .75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   border: 1px solid ${props => props.theme["orange-400"]};
   border-radius: 8px;
@@ -46,10 +51,14 @@ export const MyContactsCards = styled.div`
   }
 
   @media (max-width: 426px) {
-    width: 7rem;
+    width: 6.5rem;
 
     img {
-      width: 2.5rem;
+      width: 2rem;
+    }
+
+    h3 {
+      font-size: 1rem;
     }
 
     a {

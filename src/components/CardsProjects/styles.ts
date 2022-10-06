@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionProjects = styled.section`
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +12,12 @@ export const SectionProjects = styled.section`
   h2 {
     text-align: center;
     font-size: 2.5rem;
+  }
+
+  @media (max-width: 426px) {
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
 

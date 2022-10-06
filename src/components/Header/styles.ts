@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
   width: 100vw;
   height: 4rem;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
   background-color: ${props => props.theme["gray-900"]};
   border-bottom: 1px solid ${props => props.theme["orange-500"]};
+
+  @media (max-width: 426px) {
+    border-bottom: none;
+    display: none;
+  }
 `;
 
 export const HeaderContent = styled.div`
@@ -19,7 +21,7 @@ export const HeaderContent = styled.div`
   justify-content: center;
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 100vw;
   }
 
   @media (max-width: 426px) {
@@ -49,8 +51,12 @@ export const HeaderMenu = styled.nav`
   }
 
   @media (max-width: 768px) {
+    ul {
+      display: flex;
+      gap: 1rem;
+    }
     li a {
-    margin-right: 1rem;
-  }
+      margin-right: 0;
+    }
   }
 `;
