@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   width: 100vw;
-  height: 5rem;
+  height: 4rem;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -16,7 +16,7 @@ export const HeaderContent = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   @media (max-width: 768px) {
     width: 100%;

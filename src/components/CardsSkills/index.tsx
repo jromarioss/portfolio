@@ -45,8 +45,8 @@ export function CardsSkills() {
 
         <SectionSkillsCards className="keen-slider__slide">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Logo JavaScript"/>
-          <h3>Java Script</h3>
-          <p>Java Script uma linguagem de programação, também focada para web, para deixar as páginas mais dinâmicas, e assim dando vida para as páginas web.</p>
+          <h3>JavaScript</h3>
+          <p>JavaScript uma linguagem de programação, também focada para web, para deixar as páginas mais dinâmicas, e assim dando vida para as páginas web.</p>
         </SectionSkillsCards>
 
         <SectionSkillsCards className="keen-slider__slide">
@@ -58,13 +58,13 @@ export function CardsSkills() {
         <SectionSkillsCards className="keen-slider__slide">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Logo Bootstrap"/>
           <h3>Bootstrap</h3>
-          <p>Bootstrap é uma biblioteca, para facilitar a vida do programador, com ela você consegue fazer muitas páginas dinâmicas com pouca linha de código HTML, e CSS e assim você se preocupa mais com o back-end.</p>
+          <p>Bootstrap é uma framework focado para o front-end, que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples, assim o programador fica focado no back-end.</p>
         </SectionSkillsCards>
 
         <SectionSkillsCards className="keen-slider__slide">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Logo Node js"/>
           <h3>Node Js</h3>
-          <p>Node js é um ambiente de execução para usar o Java Script do lado do servidor. Node js executa programação assíncrona de thread único.</p>
+          <p>Node js é um ambiente de execução para usar o JavaScript do lado do servidor. Node js executa programação assíncrona de thread único.</p>
         </SectionSkillsCards>
 
         <SectionSkillsCards className="keen-slider__slide"> 
