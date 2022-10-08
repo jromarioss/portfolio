@@ -67,6 +67,20 @@ export const MyContactsCards = styled.div`
       font-size: .75rem;
     }
   }
+
+  @media (max-width: 376px) {
+    width: 5.5rem;
+
+    h3 {
+      font-size: 0.75rem;
+    }
+
+    a {
+      text-align: center;
+      padding: .2rem;
+      font-size: .75rem;
+    }
+  }
 `;
 
 export const Pdf = styled.div`

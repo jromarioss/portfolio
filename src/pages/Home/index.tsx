@@ -8,8 +8,10 @@ import jromarioImg from '../../assets/jromarioss.jpg';
 import { CardsSkills } from "../../components/CardsSkills";
 import { CardsProjects } from "../../components/CardsProjects";
 import { SendEmail } from '../../components/SendEmail';
+import { CardsCertifications } from '../../components/CardsCertifications';
 
 export function Home() {
+
   return (
     <HomeContainer>
       <HomeSectionHeader>
@@ -34,7 +36,7 @@ export function Home() {
       </HomeSectionHeader>
        
       <Fade delay={300} direction="left" duration={1000} >
-        <SectionAboutMe id="aboutMe">
+        <SectionAboutMe id="aboutMe" className='about'>
           <div>
             <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=360&h=400&q=80" alt="" />
           </div>
@@ -51,8 +53,13 @@ export function Home() {
       <Fade delay={300} direction="left" duration={1000} >
         <CardsSkills />
       </Fade>
+
       <Fade delay={300} direction="left" duration={1000} >
         <CardsProjects />
+      </Fade>
+
+      <Fade delay={300} direction="left" duration={1000} >
+        <CardsCertifications />
       </Fade>
         
       <Fade delay={300} direction="left" duration={1000} >
