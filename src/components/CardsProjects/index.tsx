@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
@@ -9,7 +10,10 @@ import desafio01Img from "../../assets/ignite_desafio01.png";
 import desafio02Img from "../../assets/ignite_desafio02.png";
 
 export function CardsProjects() {
-  const [ref] = useKeenSlider<HTMLDivElement>({
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
+    initial: 0,
     slides: {
       perView: 3,
       spacing: 20,
@@ -18,95 +22,121 @@ export function CardsProjects() {
       '(max-width: 768px)': {
         slides: {
           perView: 2,
-          spacing: 20,
+          spacing: 18,
         }
       },
       '(max-width: 426px)': {
         slides: {
-          perView: 1.4,
-          spacing: 20,
+          perView: 1,
         }
       }
     },
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    }
   });
 
   return (
     <SectionProjects id="projects">
       <h2>Meus Projetos</h2>
 
-      <SectionProjectsCard ref={ref} className="keen-slider">
+      <SectionProjectsCard>
+        <div ref={sliderRef} className="keen-slider">
+          <SectionProjectsCards className="keen-slider__slide">
+            <img src={relogioImg} alt="" />
+            <h3>Relógio Analógico e Digital</h3>
+            <p>Projeto feito em HTML, CSS e JavaScript, um relógio analógico e digital.</p>
+            <SectionProjectsCardsButton>
+              <a href="https://jromarioss.github.io/relogio_digital/" target="_blank">
+                Acessar o projeto
+              </a>
+              
+              <a href="https://github.com/jromarioss/relogio_digital" target="_blank">
+                Acessar o código
+              </a>
+            </SectionProjectsCardsButton>
+          </SectionProjectsCards>
 
-        <SectionProjectsCards className="keen-slider__slide">
-          <img src={relogioImg} alt="" />
-          <h3>Relógio Analógico e Digital</h3>
-          <p>Projeto feito em HTML, CSS e JavaScript, um relógio analógico e digital.</p>
-          <SectionProjectsCardsButton>
-            <a href="https://jromarioss.github.io/relogio_digital/" target="_blank">
-              Acessar o projeto
-            </a>
-            
-            <a href="https://github.com/jromarioss/relogio_digital" target="_blank">
-              Acessar o código
-            </a>
-          </SectionProjectsCardsButton>
-        </SectionProjectsCards>
+          <SectionProjectsCards className="keen-slider__slide">
+            <img src={batalhaImg} alt="" />
+            <h3>Batalha Naval</h3>
+            <p>Projeto feito em HTML, CSS e JavaScript, um jogo simples de Batalha Naval.</p>
+            <SectionProjectsCardsButton>
+              <a href="https://jromarioss.github.io/batalha_naval/" target="_blank">
+                Acessar o projeto
+              </a>
+              
+              <a href="https://github.com/jromarioss/batalha_naval" target="_blank">
+                Acessar o código
+              </a>
+            </SectionProjectsCardsButton>
+          </SectionProjectsCards>
 
-        <SectionProjectsCards className="keen-slider__slide">
-          <img src={batalhaImg} alt="" />
-          <h3>Batalha Naval</h3>
-          <p>Projeto feito em HTML, CSS e JavaScript, um jogo simples de Batalha Naval.</p>
-          <SectionProjectsCardsButton>
-            <a href="https://jromarioss.github.io/batalha_naval/" target="_blank">
-              Acessar o projeto
-            </a>
-            
-            <a href="https://github.com/jromarioss/batalha_naval" target="_blank">
-              Acessar o código
-            </a>
-          </SectionProjectsCardsButton>
-        </SectionProjectsCards>
+          <SectionProjectsCards className="keen-slider__slide">
+            <img src={desafio01Img} alt="" />
+            <h3>Todo List</h3>
+            <p>Desafio 01 do Ignite feito em React Js, um projeto de uma lista de tarefas.</p>
+            <SectionProjectsCardsButton>
+              <a href="https://jromarioss-ignite-react-js-desafio01.vercel.app/" target="_blank">
+                Acessar o projeto
+              </a>
+              
+              <a href="https://github.com/jromarioss/ignite_reactJs_desafio01" target="_blank">
+                Acessar o código
+              </a>
+            </SectionProjectsCardsButton>
+          </SectionProjectsCards>
 
-        <SectionProjectsCards className="keen-slider__slide">
-          <img src={desafio01Img} alt="" />
-          <h3>Todo List</h3>
-          <p>Desafio 01 do Ignite feito em React Js, um projeto de uma lista de tarefas.</p>
-          <SectionProjectsCardsButton>
-            <a href="https://jromarioss-ignite-react-js-desafio01.vercel.app/" target="_blank">
-              Acessar o projeto
-            </a>
-            
-            <a href="https://github.com/jromarioss/ignite_reactJs_desafio01" target="_blank">
-              Acessar o código
-            </a>
-          </SectionProjectsCardsButton>
-        </SectionProjectsCards>
+          <SectionProjectsCards className="keen-slider__slide">
+            <img src={desafio02Img} alt="" />
+            <h3>Coffee Delivery</h3>
+            <p>Desafio 02 do Ignite feito em React Js, um projeto de entrega de café.</p>
+            <SectionProjectsCardsButton>
+              <a href="https://jromarioss-ignite-react-js-desafio02.vercel.app/" target="_blank">
+                Acessar o projeto
+              </a>
+              
+              <a href="https://github.com/jromarioss/ignite_reactJs_desafio02" target="_blank">
+                Acessar o código
+              </a>
+            </SectionProjectsCardsButton>
+          </SectionProjectsCards>
+        </div>
+        {loaded && instanceRef.current && (
+        <>
+            <Arrow
+              left
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.prev()
+              }
+              disabled={currentSlide === 0}
+              />
 
-        <SectionProjectsCards className="keen-slider__slide">
-          <img src={desafio02Img} alt="" />
-          <h3>Coffee Delivery</h3>
-          <p>Desafio 02 do Ignite feito em React Js, um projeto de entrega de café.</p>
-          <SectionProjectsCardsButton>
-            <a href="https://jromarioss-ignite-react-js-desafio02.vercel.app/" target="_blank">
-              Acessar o projeto
-            </a>
-            
-            <a href="https://github.com/jromarioss/ignite_reactJs_desafio02" target="_blank">
-              Acessar o código
-            </a>
-          </SectionProjectsCardsButton>
-        </SectionProjectsCards>
-        
+            <Arrow
+              onClick={(e: any) =>
+                e.stopPropagation() || instanceRef.current?.next()
+              }
+              disabled={
+                currentSlide ===
+                instanceRef.current.track.details.slides.length - 1
+              }
+              />
+          </>
+        )}
       </SectionProjectsCard>
     </SectionProjects>
   );
 }
 
 function Arrow(props: {
-  disabled: boolean
-  left?: boolean
-  onClick: (e: any) => void
+  disabled: boolean;
+  left?: boolean;
+  onClick: (e: any) => void;
 }) {
-  const disabeld = props.disabled ? " arrow--disabled" : ""
+  const disabeld = props.disabled ? " arrow--disabled" : "";
   return (
     <svg
       onClick={props.onClick}
@@ -123,5 +153,5 @@ function Arrow(props: {
         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
       )}
     </svg>
-  )
+  );
 }

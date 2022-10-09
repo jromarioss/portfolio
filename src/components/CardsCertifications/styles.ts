@@ -22,7 +22,65 @@ export const CertificationContainer = styled.section`
 `;
 
 export const CertificationCard = styled.div`
-  width: 100%;
+  width: 70rem;
+  position: relative;
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #fff;
+    cursor: pointer;
+  }
+
+  .arrow--left {
+    left: 100px;
+  }
+
+  .arrow--right {
+    left: auto;
+    right: 100px;
+  }
+
+  .arrow--disabled {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    width: 39rem;
+
+    .arrow--left {
+      left: -30px;
+    }
+
+    .arrow--right {
+      right: -30px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    width: 22rem;
+
+    .arrow {
+      width: 20px;
+      height: 20px;
+    }
+
+    .arrow--left {
+      left: -25px;
+    }
+
+    .arrow--right {
+      right: -25px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    width: 19rem;
+  }
 `;
 
 export const CertificationCards = styled.div`
@@ -33,7 +91,7 @@ export const CertificationCards = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding-left: 3.8rem;
+    padding-left: 1rem;
 
     img {
       width: 600px;
@@ -41,16 +99,16 @@ export const CertificationCards = styled.div`
   }
 
   @media (max-width: 426px) {
-    padding-left: 0rem;
+    padding-left: 0;
 
     img {
-      width: 390px;
+      width: 350px;
     }
   }
 
   @media (max-width: 376px) {
     img {
-      width: 346px;
+      width: 300px;
     }
   }
 `;

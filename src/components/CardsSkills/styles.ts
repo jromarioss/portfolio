@@ -22,7 +22,56 @@ export const SectionSkills = styled.section`
 `;
 
 export const SectionSkillsCard = styled.div`
-  display: flex;
+  width: 70rem;
+  position: relative;
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #fff;
+    cursor: pointer;
+  }
+
+  .arrow--left {
+    left: -40px;
+  }
+
+  .arrow--right {
+    left: auto;
+    right: -40px;
+  }
+
+  .arrow--disabled {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    width: 39rem;
+  }
+
+  @media (max-width: 426px) {
+    width: 20rem;
+
+    .arrow {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    width: 19rem;
+    .arrow--left {
+      left: -32px;
+    }
+
+    .arrow--right {
+      right: -32px;
+    }
+  }
 `;
 
 export const SectionSkillsCards = styled.div`

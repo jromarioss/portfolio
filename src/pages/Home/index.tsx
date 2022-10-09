@@ -5,9 +5,9 @@ import { HomeContainer, HomeSectionHeader, SectionAboutMe, SectionAboutMeText, S
 
 import jromarioImg from '../../assets/jromarioss.jpg';
 
-import { CardsSkills } from "../../components/CardsSkills";
-import { CardsProjects } from "../../components/CardsProjects";
 import { SendEmail } from '../../components/SendEmail';
+import { CardsSkills } from '../../components/CardsSkills';
+import { CardsProjects } from '../../components/CardsProjects';
 import { CardsCertifications } from '../../components/CardsCertifications';
 
 export function Home() {
@@ -49,7 +49,7 @@ export function Home() {
           </SectionAboutMeText>
         </SectionAboutMe>
       </Fade>
-      
+
       <Fade delay={300} direction="left" duration={1000} >
         <CardsSkills />
       </Fade>
