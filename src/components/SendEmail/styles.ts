@@ -45,6 +45,10 @@ export const SendEmailForm = styled.form`
   justify-content: center;
   gap: 1rem;
 
+  @media (max-width: 426px) {
+    width: 100%;
+  }
+
   input, label {
     display: block;
   }

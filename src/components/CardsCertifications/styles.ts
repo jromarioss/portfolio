@@ -96,6 +96,7 @@ export const CertificationCards = styled.div`
 
     img {
       width: 600px;
+      height: 374px;
     }
   }
 
@@ -104,12 +105,14 @@ export const CertificationCards = styled.div`
 
     img {
       width: 350px;
+      height: 218px;
     }
   }
-
+  
   @media (max-width: 376px) {
     img {
       width: 300px;
+      height: 187px;
     }
   }
 `;
