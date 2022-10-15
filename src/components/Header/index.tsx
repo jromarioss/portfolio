@@ -1,11 +1,15 @@
 import { HeaderContainer, HeaderContent, HeaderMenu } from "./styles";
 
-export function Header() {
+import menuImg from '../../assets/menuIcon.svg';
+
+export function Header({ setMenuActive }: any) {
 
   return (
     <HeaderContainer>
       <HeaderContent>
         <HeaderMenu>
+          <img src={menuImg} alt="" onClick={() => setMenuActive(true)} />
+
           <ul>
             <li><a href="#">Início</a></li>
             <li><a href="#aboutMe">Sobre mim</a></li>

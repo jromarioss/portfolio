@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
+import { cardsCertifications } from "../../data/cardsCertifications";
+
 import { CertificationCard, CertificationCards, CertificationContainer } from "./styles";
 
 export function CardsCertifications() {
@@ -27,35 +29,15 @@ export function CardsCertifications() {
 
       <CertificationCard >
         <div ref={sliderRef} className="keen-slider">
-          <CertificationCards className="keen-slider__slide">
-            <a href="https://alunos.b7web.com.br/media/certificates/certificado_4059818.jpg" target="_blank">
-              <img src="https://alunos.b7web.com.br/media/certificates/certificado_4059818.jpg" alt=""/>
-            </a>
-          </CertificationCards>
-
-          <CertificationCards className="keen-slider__slide">
-            <a href="https://alunos.b7web.com.br/media/certificates/certificado_6650549.jpg" target="_blank">
-              <img src="https://alunos.b7web.com.br/media/certificates/certificado_6650549.jpg" alt=""/>
-            </a>
-          </CertificationCards>
-
-          <CertificationCards className="keen-slider__slide">
-            <a href="https://alunos.b7web.com.br/media/certificates/certificado_4859136.jpg" target="_blank">
-              <img src="https://alunos.b7web.com.br/media/certificates/certificado_4859136.jpg" alt=""/>
-            </a>
-          </CertificationCards>
-
-          <CertificationCards className="keen-slider__slide">
-            <a href="https://alunos.b7web.com.br/media/certificates/certificado_8759359.jpg" target="_blank">
-              <img src="https://alunos.b7web.com.br/media/certificates/certificado_8759359.jpg" alt=""/>
-            </a>
-          </CertificationCards>
-
-          <CertificationCards className="keen-slider__slide">
-            <a href="https://alunos.b7web.com.br/media/certificates/certificado_7990837.jpg" target="_blank">
-              <img src="https://alunos.b7web.com.br/media/certificates/certificado_7990837.jpg" alt=""/>
-            </a>
-          </CertificationCards>
+          {cardsCertifications.map(certification => {
+            return (
+              <CertificationCards className="keen-slider__slide" key={certification.id}>
+                <a href={certification.link} target="_blank">
+                  <img src={certification.img} alt=""/>
+                </a>
+              </CertificationCards>
+            );
+          })}
         </div>
         {loaded && instanceRef.current && (
         <>

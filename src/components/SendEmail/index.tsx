@@ -24,11 +24,13 @@ export function SendEmail() {
       <SendEmailContent>
         <SendEmailForm ref={form} onSubmit={sendEmail}>
             <label>Nome</label>
-            <input type="text" name="name" />
+            <input type="text" name="name" required />
+
             <label>E-mail</label>
-            <input type="email" name="email" />
+            <input type="email" name="email"required />
+
             <label>Mensagem</label>
-            <textarea name="message" />
+            <textarea name="message" required />
             <button type="submit">Enviar e-mail</button>
         </SendEmailForm>
 

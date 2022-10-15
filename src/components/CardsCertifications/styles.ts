@@ -88,6 +88,7 @@ export const CertificationCards = styled.div`
 
   img {
     width: 800px;
+    height: 499px;
   }
 
   @media (max-width: 768px) {

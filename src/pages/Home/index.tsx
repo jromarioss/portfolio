@@ -44,7 +44,7 @@ export function Home() {
           <SectionAboutMeText>
             <h2>Sobre mim</h2>
             <p>Bem-vindo ao meu Portfólio, eu me chamo <span>José Romário</span>, e eu gostaria de falar um pouco sobre minha jornada de estudo na área de <span>desenvolvimento</span>.</p>
-            <p>Quero começar dizendo que sou, como á grande maioria, querendo migrar de carreira, e a área de desenvolvimento, foi a área que eu escolhi com o objectivo de me tornar um desenvolvedor <span>Fullstack Web Developer</span>. E desde então venho estudando para atingir o meu objetivo, e aqui no meu portfólio eu gostaria de mostrar para você o meu conhecimento que eu obtive nesta minha jornada de estudo.</p>
+            <p>Quero começar dizendo que sou, como a grande maioria, querendo migrar de carreira, e a área de desenvolvimento, foi a área que eu escolhi com o objectivo de me tornar um desenvolvedor <span>Fullstack Web Developer</span>. E desde então venho estudando para atingir o meu objetivo, e aqui no meu portfólio eu gostaria de mostrar para você o meu conhecimento que eu obtive nesta minha jornada de estudo.</p>
             <p>Um muito <span>Obrigado</span> por visitar meu <span>portfólio</span>!</p>
           </SectionAboutMeText>
         </SectionAboutMe>

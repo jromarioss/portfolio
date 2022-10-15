@@ -3,11 +3,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 import { SectionProjects, SectionProjectsCard, SectionProjectsCards, SectionProjectsCardsButton } from "./styles";
-
-import relogioImg from "../../assets/relogio.png";
-import batalhaImg from "../../assets/batalha_naval.png";
-import desafio01Img from "../../assets/ignite_desafio01.png";
-import desafio02Img from "../../assets/ignite_desafio02.png";
+import { cardsProjects } from "../../data/cardsProjects";
 
 export function CardsProjects() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
@@ -45,65 +41,24 @@ export function CardsProjects() {
 
       <SectionProjectsCard>
         <div ref={sliderRef} className="keen-slider">
-          <SectionProjectsCards className="keen-slider__slide">
-            <img src={relogioImg} alt="" />
-            <h3>Relógio Analógico e Digital</h3>
-            <p>Projeto feito em HTML, CSS e JavaScript, um relógio analógico e digital.</p>
-            <SectionProjectsCardsButton>
-              <a href="https://jromarioss.github.io/relogio_digital/" target="_blank">
-                Acessar o projeto
-              </a>
-              
-              <a href="https://github.com/jromarioss/relogio_digital" target="_blank">
-                Acessar o código
-              </a>
-            </SectionProjectsCardsButton>
-          </SectionProjectsCards>
-
-          <SectionProjectsCards className="keen-slider__slide">
-            <img src={batalhaImg} alt="" />
-            <h3>Batalha Naval</h3>
-            <p>Projeto feito em HTML, CSS e JavaScript, um jogo simples de Batalha Naval.</p>
-            <SectionProjectsCardsButton>
-              <a href="https://jromarioss.github.io/batalha_naval/" target="_blank">
-                Acessar o projeto
-              </a>
-              
-              <a href="https://github.com/jromarioss/batalha_naval" target="_blank">
-                Acessar o código
-              </a>
-            </SectionProjectsCardsButton>
-          </SectionProjectsCards>
-
-          <SectionProjectsCards className="keen-slider__slide">
-            <img src={desafio01Img} alt="" />
-            <h3>Todo List</h3>
-            <p>Desafio 01 do Ignite feito em React Js, um projeto de uma lista de tarefas.</p>
-            <SectionProjectsCardsButton>
-              <a href="https://jromarioss-ignite-react-js-desafio01.vercel.app/" target="_blank">
-                Acessar o projeto
-              </a>
-              
-              <a href="https://github.com/jromarioss/ignite_reactJs_desafio01" target="_blank">
-                Acessar o código
-              </a>
-            </SectionProjectsCardsButton>
-          </SectionProjectsCards>
-
-          <SectionProjectsCards className="keen-slider__slide">
-            <img src={desafio02Img} alt="" />
-            <h3>Coffee Delivery</h3>
-            <p>Desafio 02 do Ignite feito em React Js, um projeto de entrega de café.</p>
-            <SectionProjectsCardsButton>
-              <a href="https://jromarioss-ignite-react-js-desafio02.vercel.app/" target="_blank">
-                Acessar o projeto
-              </a>
-              
-              <a href="https://github.com/jromarioss/ignite_reactJs_desafio02" target="_blank">
-                Acessar o código
-              </a>
-            </SectionProjectsCardsButton>
-          </SectionProjectsCards>
+          {cardsProjects.map(project => {
+            return (
+              <SectionProjectsCards className="keen-slider__slide">
+                <img src={project.img} alt="" />
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <SectionProjectsCardsButton>
+                  <a href={project.linkProject} target="_blank">
+                    Acessar o projeto
+                  </a>
+                  
+                  <a href={project.linkGithub} target="_blank">
+                    Acessar o código
+                  </a>
+                </SectionProjectsCardsButton>
+              </SectionProjectsCards>
+            );
+          })}
         </div>
         {loaded && instanceRef.current && (
         <>

@@ -45,10 +45,6 @@ export const SendEmailForm = styled.form`
   justify-content: center;
   gap: 1rem;
 
-  @media (max-width: 426px) {
-    width: 100%;
-  }
-
   input, label {
     display: block;
   }
@@ -78,6 +74,7 @@ export const SendEmailForm = styled.form`
     border: 1px solid transparent;
     border-radius: 8px;
     font-size: 1rem;
+    resize: none;
     
     @media (max-width: 426px) {
       width: 100%;

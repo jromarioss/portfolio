@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
 
   @media (max-width: 426px) {
     border-bottom: none;
-    display: none;
+    display: block;
   }
 `;
 
@@ -25,11 +25,15 @@ export const HeaderContent = styled.div`
   }
 
   @media (max-width: 426px) {
-    display: none;
+    display: block;
   }
 `;
 
 export const HeaderMenu = styled.nav`
+  img {
+    display: none;
+  }
+
   ul {
     display: flex;
     gap: 1.25rem;
@@ -57,6 +61,19 @@ export const HeaderMenu = styled.nav`
     }
     li a {
       margin-right: 0;
+    }
+  }
+
+  @media (max-width: 426px) {
+    img {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    ul {
+      display: none;
     }
   }
 `;
