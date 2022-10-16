@@ -62,7 +62,7 @@ export const CertificationCard = styled.div`
   }
 
   @media (max-width: 426px) {
-    width: 22rem;
+    width: 21.865rem;
 
     .arrow {
       width: 20px;
@@ -79,12 +79,14 @@ export const CertificationCard = styled.div`
   }
 
   @media (max-width: 376px) {
-    width: 19rem;
+    width: 19.5rem;
   }
 `;
 
 export const CertificationCards = styled.div`
-  padding-left: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
     width: 800px;
@@ -92,8 +94,6 @@ export const CertificationCards = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding-left: 1rem;
-
     img {
       width: 600px;
       height: 374px;
@@ -101,18 +101,16 @@ export const CertificationCards = styled.div`
   }
 
   @media (max-width: 426px) {
-    padding-left: 0;
-
     img {
       width: 350px;
-      height: 218px;
+      height: 220px;
     }
   }
   
   @media (max-width: 376px) {
     img {
-      width: 300px;
-      height: 187px;
+      width: 310px;
+      height: 189px;
     }
   }
 `;

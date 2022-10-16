@@ -16,7 +16,6 @@ export const SendEmailContainer = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 1rem;
   }
 
   @media (max-width: 426px) {
@@ -30,7 +29,7 @@ export const SendEmailContent = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 3rem;
 
   @media (max-width: 768px) {
@@ -39,15 +38,12 @@ export const SendEmailContent = styled.div`
 `;
 
 export const SendEmailForm = styled.form`
+  margin: 0 auto;
   width: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-
-  @media (max-width: 426px) {
-    width: 100%;
-  }
 
   input, label {
     display: block;
@@ -70,7 +66,7 @@ export const SendEmailForm = styled.form`
   }
 
   textarea {
-    width: 30rem;
+    width: 100%;
     height: 8rem;
     color: ${props => props.theme["gray-100"]};
     background-color: ${props => props.theme["gray-700"]};
@@ -79,10 +75,7 @@ export const SendEmailForm = styled.form`
     border-radius: 8px;
     font-size: 1rem;
     resize: none;
-    
-    @media (max-width: 426px) {
-      width: 100%;
-    }
+   
   }
 
   textarea:hover {
@@ -101,5 +94,9 @@ export const SendEmailForm = styled.form`
   button:hover {
     background-color: ${props => props.theme["orange-600"]};
     transition: background-color 0.3s;
+  }
+
+  @media (max-width: 426px) {
+    width: 100%;
   }
 `;

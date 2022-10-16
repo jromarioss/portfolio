@@ -54,22 +54,19 @@ export const SectionSkillsCard = styled.div`
   }
 
   @media (max-width: 426px) {
-    width: 20rem;
+    width: 18rem;
 
     .arrow {
       width: 20px;
       height: 20px;
     }
-  }
 
-  @media (max-width: 376px) {
-    width: 19rem;
     .arrow--left {
-      left: -32px;
+      left: -35px;
     }
 
     .arrow--right {
-      right: -32px;
+      right: -35px;
     }
   }
 `;

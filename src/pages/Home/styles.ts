@@ -5,12 +5,12 @@ export const HomeContainer = styled.main`
   margin: auto;
 
   @media (max-width: 768px) {
-    width: 100%;
-    padding-inline: 2rem;
+    width: 100vw;
+    padding-inline: 3rem;
   }
 
   @media (max-width: 426px) {
-    padding-inline: 1rem;
+    padding-inline: 1.5rem;
   }
 `;
 

@@ -21,11 +21,11 @@ export const HeaderContent = styled.div`
   justify-content: center;
 
   @media (max-width: 768px) {
-    width: 100vw;
+    width: 100%;
   }
 
   @media (max-width: 426px) {
-    display: block;
+    justify-content: end;
   }
 `;
 
@@ -67,9 +67,7 @@ export const HeaderMenu = styled.nav`
   @media (max-width: 426px) {
     img {
       display: block;
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+      margin-right: 1.5rem;
     }
 
     ul {

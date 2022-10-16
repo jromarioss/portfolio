@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const MyContactsContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 5rem;
 
   @media (max-width: 426px) {
@@ -13,15 +14,17 @@ export const MyContactsContainer = styled.div`
 `;
 
 export const MyContactsCard = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
 
   @media (max-width: 426px) {
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
   }
 `;
-
 
 export const MyContactsCards = styled.div`
   width: 11rem;

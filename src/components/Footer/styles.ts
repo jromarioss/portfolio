@@ -4,5 +4,8 @@ export const FooterContainer = styled.footer`
   width: 100vw;
   padding: 1.5rem;
   text-align: center;
-  background-color: ${props => props.theme["gray-900"]};
+
+  @media (max-width: 426px) {
+    margin-top: 3rem;
+  }
 `;
