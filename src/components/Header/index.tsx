@@ -1,16 +1,24 @@
-import {Link} from "react-scroll";
+import { useState } from "react";
+import { Link } from "react-scroll";
 
 import { HeaderContainer, HeaderContent, HeaderMenu } from "./styles";
 
 import menuImg from '../../assets/menuIcon.svg';
+import { MenuMobile } from "../MenuMobile";
 
-export function Header({ setMenuActive }: any) {
+export function Header() {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  function handleOpenMenu() {
+    setOpenMenu(!openMenu);
+    console.log(openMenu);
+  }
 
   return (
     <HeaderContainer id='home'>
       <HeaderContent>
         <HeaderMenu>
-          <img src={menuImg} alt="" onClick={() => setMenuActive(true)} />
+          <img src={menuImg} alt="" onClick={handleOpenMenu} />
 
           <ul>
             <li><Link to="home" spy={true} smooth={true} offset={-100} duration={500}>Início</Link></li>
@@ -20,8 +28,14 @@ export function Header({ setMenuActive }: any) {
             <li><Link to="certifications" spy={true} smooth={true} offset={-10} duration={500}>Certificações</Link></li>
             <li><Link to="contacts" spy={true} smooth={true} offset={-100} duration={500}>Contacts</Link></li>
           </ul>
+          { openMenu === true ?
+            <MenuMobile setOpenMenu={setOpenMenu} />
+            :
+            <></>
+          }
         </HeaderMenu>
       </HeaderContent>
+      
     </HeaderContainer>
   );
 }
