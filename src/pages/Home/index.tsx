@@ -14,7 +14,7 @@ export function Home() {
 
   return (
     <HomeContainer>
-      <HomeSectionHeader>
+      <HomeSectionHeader id='home'>
         <SectionHeaderDiv>
           <h1>
             HELLO <span>WORLD!</span>

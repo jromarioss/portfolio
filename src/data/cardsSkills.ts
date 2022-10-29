@@ -33,7 +33,7 @@ export const cardsSkills: SkillsProps[] = [
   {
     id: 5,
     title: "PHP",
-    description: "Estudando, PHP é uma lingaguem de programação que roda do lado do servidor, e ela é capaz de gerar conteúdo dinâmico para WEB, o código é interpretado no lado do servidor pelo módulo PHP, que gera a página web a ser visualizada no lado do cliente.",
+    description: "PHP é uma lingaguem de programação que roda do lado do servidor, e ela é capaz de gerar conteúdo dinâmico para WEB, o código é interpretado no lado do servidor pelo módulo PHP, que gera a página web a ser visualizada no lado do cliente.",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
   },
   {
@@ -50,12 +50,18 @@ export const cardsSkills: SkillsProps[] = [
   },
   {
     id: 8,
+    title: "React Native",
+    description: "React Native é um framework Javascript para desenvolvimento de aplicativos, para Android e IOS, e o código é convertido no back-end para linguagem nativa do sistema operacional.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    id: 9,
     title: "Git",
     description: "Git é um sistema de controle de versionamento de códigos, com ele você consegue voltar versões anteriores do seu código, assim evitando problemas futuros.",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
   {
-    id: 9,
+    id: 10,
     title: "Bootstrap",
     description: "Bootstrap é uma framework focado para o front-end, que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples, assim o programador fica focado no back-end.",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",

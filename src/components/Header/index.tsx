@@ -15,7 +15,7 @@ export function Header() {
   }
 
   return (
-    <HeaderContainer id='home'>
+    <HeaderContainer>
       <HeaderContent>
         { openMenu === true ?
           <MenuMobile setOpenMenu={setOpenMenu} />
