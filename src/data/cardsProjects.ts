@@ -2,12 +2,13 @@ import relogioImg from "../assets/relogio.png";
 import batalhaImg from "../assets/batalha_naval.png";
 import desafio01Img from "../assets/ignite_desafio01.png";
 import desafio02Img from "../assets/ignite_desafio02.png";
+import appImage01 from "../assets/appImage01.png";
 
 interface ProjectsProps {
   id: number;
   title: string;
   description: string;
-  linkProject: string;
+  linkProject?: string;
   linkGithub: string;
   img: any;
 }
@@ -45,4 +46,12 @@ export const cardsProjects: ProjectsProps[] = [
     linkGithub: "https://github.com/jromarioss/ignite_reactJs_desafio02",
     img: desafio02Img,
   },
+  {
+    id: 5,
+    title: "App lista de compras",
+    description: "Aplicativo feito em react native, uma lista de compras.",
+    linkProject: "https://github.com/jromarioss/appListaDeCompra",
+    linkGithub: "https://github.com/jromarioss/appListaDeCompra",
+    img: appImage01,
+  }
 ];
