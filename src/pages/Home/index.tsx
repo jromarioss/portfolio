@@ -1,9 +1,7 @@
-import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
-import { CaretCircleUp  } from "phosphor-react";
 
-import { ButtonBackToTop, HomeContainer, HomeSectionHeader, SectionAboutMe, SectionAboutMeText, SectionHeaderDiv } from "./styles";
+import { HomeContainer, HomeSectionHeader, SectionAboutMe, SectionAboutMeText, SectionHeaderDiv } from "./styles";
 
 import jromarioImg from '../../assets/jromarioss.jpg';
 
@@ -67,12 +65,6 @@ export function Home() {
       <Fade delay={300} direction="left" duration={1000} >
         <SendEmail />
       </Fade>
-      
-      <ButtonBackToTop>
-        <Link to="home" spy={true} smooth={true} offset={-100} duration={500}>
-          <CaretCircleUp size={54} />
-        </Link>
-      </ButtonBackToTop>
     </HomeContainer>
   );
 }

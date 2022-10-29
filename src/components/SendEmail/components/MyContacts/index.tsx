@@ -6,7 +6,7 @@ import pdfImg from '../../../../assets/pdfIcons.png'
 
 export function MyContacts() {
   return (
-    <MyContactsContainer id="contacts">
+    <MyContactsContainer>
       <MyContactsCard>
         <MyContactsCards>
         <img src={githubImg} alt="" /> 

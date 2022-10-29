@@ -19,7 +19,7 @@ export function SendEmail() {
   };
 
   return (
-    <SendEmailContainer>
+    <SendEmailContainer id="contacts">
       <h2>Contatos</h2>
       <SendEmailContent>
         <SendEmailForm ref={form} onSubmit={sendEmail}>

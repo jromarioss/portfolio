@@ -103,6 +103,7 @@ export const SectionAboutMe = styled.section`
   }
 
   @media (max-width: 426px) {
+    padding-top: 4rem;
     img {
       display: none;
     }
@@ -133,9 +134,3 @@ export const SectionAboutMeText = styled.section`
     margin: auto;
   }
 `;
-
-export const ButtonBackToTop = styled.div`
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-`

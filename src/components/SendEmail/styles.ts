@@ -19,6 +19,7 @@ export const SendEmailContainer = styled.div`
   }
 
   @media (max-width: 426px) {
+    padding-top: 4rem;
     h2 {
       font-size: 2rem;
     }
