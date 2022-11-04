@@ -34,7 +34,7 @@ export const cardsProjects: ProjectsProps[] = [
     id: 3,
     title: "Todo List",
     description: "Desafio 01 do Ignite feito em React Js, um projeto de uma lista de tarefas.",
-    linkProject: "https://jromarioss-ignite-react-js-desafio01.vercel.app/",
+    linkProject: "https://ignite-react-js-desafio01-qq2epbio2-jromarioss.vercel.app/",
     linkGithub: "https://github.com/jromarioss/ignite_reactJs_desafio01",
     img: desafio01Img,
   },
