@@ -1,7 +1,5 @@
 import relogioImg from "../assets/relogio.png";
 import batalhaImg from "../assets/batalha_naval.png";
-import desafio01Img from "../assets/ignite_desafio01.png";
-import desafio02Img from "../assets/ignite_desafio02.png";
 import appImage01 from "../assets/appImage01.png";
 
 interface ProjectsProps {
@@ -36,7 +34,7 @@ export const cardsProjects: ProjectsProps[] = [
     description: "Desafio 01 do Ignite feito em React Js, um projeto de uma lista de tarefas.",
     linkProject: "https://ignite-react-js-desafio01-qq2epbio2-jromarioss.vercel.app/",
     linkGithub: "https://github.com/jromarioss/ignite_reactJs_desafio01",
-    img: desafio01Img,
+    img: "https://github.com/jromarioss/ignite_reactJs_desafio01/blob/main/public/images/capa.png?raw=true",
   },
   {
     id: 4,
@@ -44,10 +42,19 @@ export const cardsProjects: ProjectsProps[] = [
     description: "Desafio 02 do Ignite feito em React Js, um projeto de entrega de café.",
     linkProject: "https://jromarioss-ignite-react-js-desafio02.vercel.app/",
     linkGithub: "https://github.com/jromarioss/ignite_reactJs_desafio02",
-    img: desafio02Img,
+    img: "https://github.com/jromarioss/ignite_reactJs_desafio02/blob/main/public/images/capa.png?raw=true",
   },
   {
     id: 5,
+    title: "Github BLogs",
+    description: "Desafio 03 do Ignite feito em React Js, um projeto de blogs no github.",
+    linkProject: "https://ignite-react-js-desafio03.vercel.app/",
+    linkGithub: "https://github.com/jromarioss/ignite_reactJs_desafio03",
+    img: "https://github.com/jromarioss/ignite_reactJs_desafio03/blob/main/public/images/capa.png?raw=true",
+  }
+  ,
+  {
+    id: 6,
     title: "App lista de compras",
     description: "Aplicativo feito em react native, uma lista de compras.",
     linkProject: "https://github.com/jromarioss/appListaDeCompra",

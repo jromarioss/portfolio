@@ -83,6 +83,11 @@ export const SectionProjectsCards = styled.div`
   border: 1px solid ${props => props.theme["orange-400"]};
   border-radius: 8px;
   text-align: center;
+
+  img {
+    width: 192px;
+    height: 153px;
+  }
   
   &:hover {
     background-color: ${props => props.theme["gray-800"]};
