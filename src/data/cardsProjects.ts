@@ -59,6 +59,6 @@ export const cardsProjects: ProjectsProps[] = [
     description: "Aplicativo feito em react native, uma lista de compras.",
     linkProject: "https://github.com/jromarioss/appListaDeCompra",
     linkGithub: "https://github.com/jromarioss/appListaDeCompra",
-    img: appImage01,
+    img: "https://github.com/jromarioss/appListaDeCompra/blob/main/public/appImage.png?raw=true",
   }
 ];
