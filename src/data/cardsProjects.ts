@@ -1,6 +1,6 @@
 import relogioImg from "../assets/relogio.png";
+import appListaCompra from "../assets/appsLista.png";
 import batalhaImg from "../assets/batalha_naval.png";
-import appImage01 from "../assets/appImage01.png";
 
 interface ProjectsProps {
   id: number;
@@ -57,8 +57,8 @@ export const cardsProjects: ProjectsProps[] = [
     id: 6,
     title: "App lista de compras",
     description: "Aplicativo feito em react native, uma lista de compras.",
-    linkProject: "https://github.com/jromarioss/appListaDeCompra",
+    linkProject: "https://play.google.com/store/apps/details?id=com.jromarioss.ShoppingList",
     linkGithub: "https://github.com/jromarioss/appListaDeCompra",
-    img: "https://github.com/jromarioss/appListaDeCompra/blob/main/public/appImage.png?raw=true",
+    img: appListaCompra,
   }
 ];

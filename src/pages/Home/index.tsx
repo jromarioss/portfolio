@@ -32,7 +32,7 @@ export function Home() {
           />
         </SectionHeaderDiv>
 
-        <img src={jromarioImg} alt="José Romário" />
+        <img src="https://avatars.githubusercontent.com/u/73487362?v=4" alt="José Romário" />
       </HomeSectionHeader>
        
       <Fade delay={300} direction="left" duration={1000} >
