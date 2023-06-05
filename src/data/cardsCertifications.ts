@@ -46,5 +46,10 @@ export const cardsCertifications: CertificatiosProps[] = [
     id: 8,
     link: "https://udemy-certificate.s3.amazonaws.com/image/UC-c072c2c7-d979-41a3-a8a9-e9b480921435.jpg?v=1604680395000",
     img: "https://udemy-certificate.s3.amazonaws.com/image/UC-c072c2c7-d979-41a3-a8a9-e9b480921435.jpg?v=1604680395000"
+  },
+  {
+    id: 9,
+    link: "https://alunos.b7web.com.br/media/certificates/certificado_2295860.jpg",
+    img: "https://alunos.b7web.com.br/media/certificates/certificado_2295860.jpg"
   }
 ];
