@@ -8,15 +8,15 @@ interface SkillsProps {
 export const cardsSkills: SkillsProps[] = [
   {
     id: 1,
-    title: "HTML 5",
-    description: "HTML é uma linguagem de marcação para web, com suas inúmeras tags, para informar os navegadores como exibir conteúdo. Sempre manter as tags o máximo de semântica possível.",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    title: "C#",
+    description: "C# é uma linguagem de programação orientada a objetos e orientada a componentes. C# fornece construções de linguagem para dar suporte diretamente a esses conceitos, tornando C# uma linguagem natural para criação e uso de componentes de software",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
   },
   {
     id: 2,
-    title: "CSS 3",
-    description: "CSS mais conhecida como folhas de estilo em cascata, é a linguagem de marcação para o design da web, para estilizar as páginas na web e fazer layouts incríveis.",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    title: ".NET",
+    description: "O .NET é uma plataforma de código aberto para a criação de aplicações de desktop, Web e móveis que podem ser executadas nativamente em qualquer sistema operacional.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const cardsSkills: SkillsProps[] = [
   {
     id: 5,
     title: "PHP",
-    description: "PHP é uma lingaguem de programação que roda do lado do servidor, e ela é capaz de gerar conteúdo dinâmico para WEB, o código é interpretado no lado do servidor pelo módulo PHP, que gera a página web a ser visualizada no lado do cliente.",
+    description: "PHP é uma linguagem de programação que roda do lado do servidor, e ela é capaz de gerar conteúdo dinâmico para WEB, o código é interpretado no lado do servidor pelo módulo PHP, que gera a página web a ser visualizada no lado do cliente.",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
   },
   {
@@ -65,5 +65,17 @@ export const cardsSkills: SkillsProps[] = [
     title: "Bootstrap",
     description: "Bootstrap é uma framework focado para o front-end, que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples, assim o programador fica focado no back-end.",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+  },
+  {
+    id: 11,
+    title: "HTML 5",
+    description: "HTML é uma linguagem de marcação para web, com suas inúmeras tags, para informar os navegadores como exibir conteúdo. Sempre manter as tags o máximo de semântica possível.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    id: 12,
+    title: "CSS 3",
+    description: "CSS mais conhecida como folhas de estilo em cascata, é a linguagem de marcação para o design da web, para estilizar as páginas na web e fazer layouts incríveis.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
 ];

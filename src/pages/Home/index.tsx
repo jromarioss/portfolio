@@ -25,7 +25,7 @@ export function Home() {
 
           <Typewriter
             options={{
-              strings: ['Front-end Web Developer'],
+              strings: ['Front-end Web Developer', 'Back-end Developer'],
               autoStart: true,
               loop: true,
             }}
