@@ -57,7 +57,7 @@ export const cardsProjects: ProjectsProps[] = [
     id: 6,
     title: "App lista de compras",
     description: "Aplicativo feito em react native, uma lista de compras.",
-    linkProject: "https://play.google.com/store/apps/details?id=com.jromarioss.ShoppingList",
+    linkProject: "",
     linkGithub: "https://github.com/jromarioss/appListaDeCompra",
     img: appListaCompra,
   },
@@ -68,5 +68,21 @@ export const cardsProjects: ProjectsProps[] = [
     linkProject: "https://ignite-react-js-desafio04.vercel.app/",
     linkGithub: "https://github.com/jromarioss/ignite_reactJs_desafio04",
     img: "https://github.com/jromarioss/ignite_reactJs_desafio04/blob/main/public/ignite-shop.png?raw=true",
+  },
+  {
+    id: 8,
+    title: "Meu treino",
+    description: "Aplicativo feito em react native para montar treino de academia.",
+    linkProject: "",
+    linkGithub: "https://github.com/jromarioss/meu-treino",
+    img: "https://github.com/jromarioss/meu-treino/blob/main/public/screens.png?raw=true",
+  },
+  {
+    id: 9,
+    title: "Adota pet",
+    description: "Sistema web para adoção de pet de estimação e publicação dos pets para adoção.",
+    linkProject: "",
+    linkGithub: "https://github.com/jromarioss/adopt-a-pet",
+    img: "https://github.com/jromarioss/adopt-a-pet/blob/main/public/screen.png?raw=true",
   }
 ];

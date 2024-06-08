@@ -25,7 +25,7 @@ export function Home() {
 
           <Typewriter
             options={{
-              strings: ['Front-end Web Developer', 'Back-end Developer'],
+              strings: ['Full stack',],
               autoStart: true,
               loop: true,
             }}
@@ -43,8 +43,13 @@ export function Home() {
 
           <SectionAboutMeText>
             <h2>Sobre mim</h2>
-            <p>Bem-vindo ao meu Portfólio, eu me chamo <span>José Romário</span>, e eu gostaria de falar um pouco sobre minha jornada de estudo na área de <span>desenvolvimento</span>.</p>
-            <p>Quero começar dizendo que sou, como a grande maioria, querendo migrar de carreira, e a área de desenvolvimento, foi a área que eu escolhi com o objectivo de me tornar um desenvolvedor <span>Fullstack Web Developer</span>. E desde então venho estudando para atingir o meu objetivo, e aqui no meu portfólio eu gostaria de mostrar para você o meu conhecimento que eu obtive nesta minha jornada de estudo.</p>
+
+            <p>Bem-vindo ao meu portfólio! Meu nome é <span>José Romário</span>, e gostaria de compartilhar um pouco da minha trajetória na área de <span>desenvolvimento</span>.</p>
+
+            <p>Minha jornada começou com a decisão de mudar de carreira e me aventurar no mundo do <span>desenvolvimento web</span>, com o objetivo claro de me tornar um desenvolvedor <span>Fullstack</span>. Desde então, tenho me dedicado intensamente aos estudos e à prática para alcançar esse <span>objetivo</span>.</p>
+
+            <p>Neste <span>portfólio</span>, apresento os conhecimentos e habilidades que adquiri ao longo dessa caminhada. Aqui, você encontrará projetos que refletem minha evolução e as diversas <span>tecnologias que domino</span>.</p>
+
             <p>Um muito <span>Obrigado</span> por visitar meu <span>portfólio</span>!</p>
           </SectionAboutMeText>
         </SectionAboutMe>

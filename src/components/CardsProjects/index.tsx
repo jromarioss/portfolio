@@ -48,9 +48,11 @@ export function CardsProjects() {
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <SectionProjectsCardsButton>
-                  <a href={project.linkProject} target="_blank">
-                    Acessar o projeto
-                  </a>
+                  {project.linkProject !== "" &&
+                    <a href={project.linkProject} target="_blank">
+                      Acessar o projeto
+                    </a>
+                  }
                   
                   <a href={project.linkGithub} target="_blank">
                     Acessar o código

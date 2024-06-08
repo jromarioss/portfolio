@@ -30,12 +30,12 @@ export const cardsSkills: SkillsProps[] = [
     description: "TypeScript uma linguagem que foi criada pela Microsoft em cima do JavaScript, para adicionar recursos de tipagem estáticas à linguagem, para melhora lá, e também é uma linguagem orientada a objetos.",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
-  {
-    id: 5,
-    title: "PHP",
-    description: "PHP é uma linguagem de programação que roda do lado do servidor, e ela é capaz de gerar conteúdo dinâmico para WEB, o código é interpretado no lado do servidor pelo módulo PHP, que gera a página web a ser visualizada no lado do cliente.",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-  },
+  // {
+  //   id: 5,
+  //   title: "PHP",
+  //   description: "PHP é uma linguagem de programação que roda do lado do servidor, e ela é capaz de gerar conteúdo dinâmico para WEB, o código é interpretado no lado do servidor pelo módulo PHP, que gera a página web a ser visualizada no lado do cliente.",
+  //   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+  // },
   {
     id: 6,
     title: "Node Js",

@@ -28,14 +28,14 @@ export function MyContacts() {
           <img src={whatsappImg}  alt="" /> 
 
           <h3>Whatsapp</h3>
-          <a href="https://wa.me/5515996927826" target="_blank">Acessar Whatsapp</a>
+          <a href="https://wa.me/5515996325074" target="_blank">Acessar Whatsapp</a>
         </MyContactsCards>
       </MyContactsCard>
 
-      <Pdf>
+     {/*  <Pdf>
         <a href="/Jose.pdf" download="Jose.pdf" type="application/pdf">Download Currículo</a>
         <img src={pdfImg} alt="" width="30" />
-      </Pdf>
+      </Pdf> */}
     </MyContactsContainer>
   );
 }
